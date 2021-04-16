@@ -2,13 +2,13 @@
 
 void resetscore()
     {
-        system("cls");
-        float sc;
-        char nm[20];
-        FILE *f;
-        f=fopen("score.txt","r+");
-        fscanf(f,"%s%f",&nm,&sc);
-        sc=0;
-        fprintf(f,"%s,%.2f",nm,sc);
-        fclose(f);
+    system("cls");
+    float scr;
+	char nm[20];
+	FILE *fptr;
+	fptr=fopen("score.txt","r+");
+	fscanf(fptr,"%s%f",&nm,&scr);
+	scr=0;
+	fprintf(fptr,"%s,%.2f",nm,scr);
+    fclose(fptr);
     }
